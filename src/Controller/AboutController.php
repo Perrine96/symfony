@@ -11,6 +11,8 @@ class AboutController extends AbstractController
     #[Route('/about', name: 'app_about')]
     public function index(): Response
     {
-        return new Response('About');
+        return $this->render('about/index.html.twig', [
+            'controller_name' => 'about',
+        ]);
     }
 }
