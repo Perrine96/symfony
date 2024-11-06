@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #000000; /* Couleur de fond de la barre de navigation */
+    padding: 10px; /* Espacement intérieur */
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
+    display: flex; /* Affiche les éléments de la liste en ligne */
+    justify-content: space-around; /* Espace égal entre les éléments */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacement horizontal entre les éléments */
+}
+
+nav ul li a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Souligne le lien au survol */
+}
+
