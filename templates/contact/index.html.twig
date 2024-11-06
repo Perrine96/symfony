@@ -1,24 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}Contact Us{% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('CSS/contact.css') }}">
 {% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
+<body>
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Contact Us</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/perrinepro/Desktop/symfony/test_symfony/src/Controller/ContactController.php</code></li>
-        <li>Your template at <code>/Users/perrinepro/Desktop/symfony/test_symfony/templates/contact/index.html.twig</code></li>
-    </ul>
-</div>
+    <form class="contact-form" action="{{ path('contact') }}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
 {% endblock %}

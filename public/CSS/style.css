@@ -1,27 +1,30 @@
+/* OVERVIEW */
 * {
     margin: 0;
     padding: 0;
+    font-family: "Gugi", sans-serif;
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: rgb(19, 19, 20);
+    color: rgb(207, 200, 200);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 
-footer {
-    margin-top: auto;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
+/* NAV */
 nav {
-    background-color: #000000; /* Couleur de fond de la barre de navigation */
-    padding: 10px; /* Espacement intérieur */
+    background-color: rgb(0, 0, 0); /* Couleur de fond de la barre de navigation */
+    padding: 0 1rem;
+    height: 7vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    /* gap: 6rem; */
 }
 
 nav ul {
@@ -45,3 +48,20 @@ nav ul li a:hover {
     text-decoration: underline; /* Souligne le lien au survol */
 }
 
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p {
+        color: #434246;
+        & a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
